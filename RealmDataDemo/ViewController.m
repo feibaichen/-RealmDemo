@@ -60,23 +60,7 @@
     //2.存储对象(realm种存储对象一定要开启事务)
     
     //拿到操作realm的数据库对象写入
-    //会生成默认的default.realm数据库沙盒文件
     RLMRealm *realm = [RLMRealm defaultRealm];
-    
-    //-----------自定义的数据库名字
-    
-//    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-//    NSString *dbPath = [docPath stringByAppendingPathComponent:@"student.realm"];
-//    RLMRealm *realm = [RLMRealm realmWithPath:dbPath];
-   
-    //或者 只读数据库
-    
-//    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-//    NSString *dbPath = [docPath stringByAppendingPathComponent:@"db/db.realm"];
-//    RLMRealm *realm = [RLMRealm realmWithPath:dbPath readOnly:YES error:nil];
-    
-    //-----------自定义的数据库名字
-    
     //开始写入事务
     [realm beginWriteTransaction];
     //存储对象
