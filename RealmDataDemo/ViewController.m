@@ -64,17 +64,18 @@
     
     //------------------自定义Realm数据库  可以通过： [RLMRealm defaultRealmPath] 查看默认存储的路径。
     
-//    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-//    NSString *dbPath = [docPath stringByAppendingPathComponent:@"db/db.realm"];
-//    RLMRealm *realm = [RLMRealm realmWithPath:dbPath];
+    //    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    //    NSString *dbPath = [docPath stringByAppendingPathComponent:@"db/db.realm"];
+    //    RLMRealm *realm = [RLMRealm realmWithPath:dbPath];
     
     //或者 只读数据库
     
-//    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-//    NSString *dbPath = [docPath stringByAppendingPathComponent:@"db/db.realm"];
-//    RLMRealm *realm = [RLMRealm realmWithPath:dbPath readOnly:YES error:nil];
+    //    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    //    NSString *dbPath = [docPath stringByAppendingPathComponent:@"db/db.realm"];
+    //    RLMRealm *realm = [RLMRealm realmWithPath:dbPath readOnly:YES error:nil];
     
-     //------------------自定义Realm数据库
+    //------------------自定义Realm数据库
+    
     
     //开始写入事务
     [realm beginWriteTransaction];
